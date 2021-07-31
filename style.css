@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.neon-light {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  height: 200px;
+  border-radius: 25px;
+  background: transparent;
+  width: 10px;
+  box-shadow: 0 0 40px 5px #fff, inset 0 0 20px #fff, 0 0 160px 20px #08f,
+    inset 0 0 320px 30px #08f, inset 0 0 20px #08f;
+  animation: run 6s linear infinite;
+}
+
+@keyframes run {
+  0% {
+    left: 10%;
+    opacity: 0;
+  }
+  2% {
+    left: 10%;
+    opacity: 1;
+  }
+  4% {
+    left: 10%;
+    opacity: 0;
+  }
+  6% {
+    left: 10%;
+    opacity: 1;
+  }
+  8% {
+    left: 10%;
+    opacity: 0;
+  }
+  10% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    left: 90%;
+    opacity: 1;
+  }
+}
